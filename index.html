@@ -17,7 +17,7 @@
   button.addEventListener('click', () => {
     console.log('клик на кнопку')
 
-    window.contentWindow.postMessage("отправил запрос из айфрейма", "*")
+    window.frames.postMessage("отправил запрос из айфрейма", "*")
 
   })
 </script>
