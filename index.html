@@ -12,9 +12,11 @@
 
 </body>
 <script>
+  console.log('window', window)
   const button = document.querySelector('button')
   button.addEventListener('click', () => {
     console.log('клик на кнопку')
+
     window.contentWindow.postMessage("отправил запрос из айфрейма", "*")
 
   })
