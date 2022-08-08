@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+<div>Hello world</div>
+<button>добавить в локал сторейдж</button>
+
+</body>
+<script>
+	const button = document.querySelector('button')
+  button.addEventListener('click', () => {
+    localStorage.setItem('key-123', '123123123')
+	})
+</script>
+
+</html>
