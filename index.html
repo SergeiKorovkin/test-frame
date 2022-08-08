@@ -12,12 +12,23 @@
 
 </body>
 <script>
-  console.log('window', window)
   const button = document.querySelector('button')
   button.addEventListener('click', () => {
     console.log('клик на кнопку')
+		const data = [{
+      id: '1',
+			title: 'hello'
+		},
+      {
+        id: '2',
+        title: 'hello2'
+      },
+      {
+        id: '13',
+        title: 'hello3'
+      }]
 
-    window.parent.postMessage("отправил запрос из айфрейма", "*")
+    window.frames.postMessage(JSON.stringify(data), "*")
 
   })
 </script>
