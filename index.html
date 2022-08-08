@@ -15,7 +15,7 @@
   const button = document.querySelector('button')
   button.addEventListener('click', () => {
     console.log('клик на кнопку')
-    window.postMessage("отправил запрос из айфрейма", "*")
+    window.contentWindow.postMessage("отправил запрос из айфрейма", "*")
 
   })
 </script>
