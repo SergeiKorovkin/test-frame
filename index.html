@@ -28,7 +28,7 @@
         title: 'hello3'
       }]
 
-    window.frames.postMessage(JSON.stringify(data), "*")
+    window.parent.postMessage(JSON.stringify(data), "*")
 
   })
 </script>
