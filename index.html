@@ -14,7 +14,10 @@
 <script>
 	const button = document.querySelector('button')
   button.addEventListener('click', () => {
-    localStorage.setItem('key-123', '123123123')
+// get reference to window inside the iframe
+var wn = document.getElementById('ifrm').contentWindow;
+// postMessage arguments: data to send, target origin
+wn.postMessage('Hello to iframe from parent!');
 	})
 </script>
 
